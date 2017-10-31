@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Projeto PG1 </title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link rel="stylesheet" type="text/css" href="materialize.min.css" />
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="center">
+				<h3>
+					Projeto 1 PG - lcgm
+				</h3>
+				<h5>
+					Grid com interpolações lineares
+				</h5>
+	          	<a class="btn yellow modal-trigger" href="#help-modal">Ajuda</a>
+			</div>
+		</div>
+
+		<div id="main-row" class="row">
+			<div class="input-field col s6 m3 offset-m1">
+	          <input id="interpolation-number" type="number" min="0">
+	          <label for="interpolation-number">Número de interpolações</label>
+	        </div>
+
+	        <div class="updateButton col s6 m3">
+	          <a class="btn" onclick="updateInterpolation()">Atualizar</a>
+	        </div>
+
+	        <div id="interpol-field-wrapper" class="col s12 offset-m1">
+				<span id="interpol-field" class="new badge" data-badge-caption="Interpol.">20</span>
+	        </div>	 
+
+			<div class="col s12 m10 offset-m1">
+				<a id="reset-button" class="btn" onclick="resetApp()">Resetar</a>
+		        <div id="canvas-parent" class="card-panel grey">
+					<canvas id="canvas-node"></canvas>
+		        </div>
+			</div>
+
+		</div>
+
+	  	<div id="help-modal" class="modal">
+		    <div class="modal-content">
+		    <h3 class="center"> Como usar </h3>
+		      	<h5>Interações</h5>
+		      	<ul class="browser-default">
+		      		<li> Clique único: adicionar ponto </li>
+		      		<li> Clique duplo: remover ponto </li>
+		      		<li> Clique e arrastar: mover ponto </li>
+		      	</ul>
+		      	<p> 
+		      		Ao atingir 4 pontos, um Grid será desenhado através
+		      		de interpolações bilineares de acordo com o número de
+		      		interpolações especificado!
+		      	</p>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Voltar</a>
+		    </div>
+	  	</div>
+
+		<script src="jquery.min.js"></script>
+		<script src="materialize.min.js"></script>
+		<script src="drawing.js"></script>
+		<script src="main.js"></script>
+
+
+
+	</body>
+</html>
