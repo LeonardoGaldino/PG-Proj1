@@ -57,7 +57,7 @@ function updateInterpolation() {
 	configs.interpolationBegin = -parseInt(numberInterpolations/2);
 	configs.interpolationEnd = parseInt(numberInterpolations/2+1);
 	updateInterpolField(numberInterpolations);
-	resetApp();
+	drawApp();
 }
 
 function getMousePos(clickEvent) {
