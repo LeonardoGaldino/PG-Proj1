@@ -5,7 +5,6 @@ $(document).ready(function(){
 	$('.modal').modal();
 });
 
-
 // -------------------------------- Configurações -----------------------------------
 var canvas = document.getElementById('canvas-node');
 var context = canvas.getContext('2d');
@@ -162,6 +161,3 @@ function handleMouseUp(clickEvent) {
 canvas.addEventListener('dblclick', handleDoubleClick);
 canvas.addEventListener('mousedown', handleMouseDown);
 canvas.addEventListener('mouseup', handleMouseUp);
-
-
-
